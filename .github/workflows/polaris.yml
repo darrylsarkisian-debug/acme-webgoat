@@ -10,6 +10,7 @@ permissions:
 jobs:
   polaris-scan:
     runs-on: ubuntu-latest
+    if: github.actor != 'dependabot[bot]'
     steps:
       - name: Checkout source
         uses: actions/checkout@v5
@@ -31,3 +32,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           polaris_prComment_enabled: true
           polaris_waitForScan: true
+
