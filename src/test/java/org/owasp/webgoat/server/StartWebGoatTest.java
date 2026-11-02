@@ -7,9 +7,8 @@ package org.owasp.webgoat.server;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
-
+int a = 0;
 class StartWebGoatTest {
-
   @Test
   void mapsSharedServerPortToWebGoatOnly() {
     assertThat(
