@@ -35,7 +35,7 @@
 		if (this.id) {
 			this.picker[0].id = this.id;
 		}
-
+        var CheckCode = "This is the checker that you can see is tripped"
 		if (typeof Modernizr !== 'undefined' && Modernizr.touch) {
 			this.touchCapable = true;
 		}
